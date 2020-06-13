@@ -13,8 +13,7 @@ If via Git, do following:
 sudo apt-get install raspberrypi-kernel-headers
 git clone https://github.com/fastoe/RTL8811CU_for_Raspbian
 cd RTL8811CU_for_Raspbian
-make
-sudo make install
+make -j4 && sudo make install
 sudo modprobe 8821cu
 sudo reboot
 ```
